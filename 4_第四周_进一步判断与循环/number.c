@@ -1,3 +1,4 @@
+/* Copyright 2024 TUT */
 #include <stdio.h>
 
 int main() {
@@ -6,14 +7,14 @@ int main() {
     int odd = 0;
     int even = 0;
 
-    scanf("%d", &number); // 读入mumber
-    while ( number!=-1 ) {
-        if ( number%2==1 ) {
+    scanf("%d", &number);   // 读入mumber
+    while (number != -1) {
+        if (number % 2 == 1) {
             odd += 1;
         } else {
             even += 1;
         }
-        scanf("%d", &number); // 读入mumber
+        scanf("%d", &number);  // 读入mumber
     }
 
     printf("%d %d", odd, even);

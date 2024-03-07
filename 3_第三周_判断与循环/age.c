@@ -1,17 +1,15 @@
+/* Copyright 2024 TUT */
 #include <stdio.h>
 
-int main()
-{
+int main() {
     const int MINOR = 35;
-
-    int age =0;
-
+    int       age = 0;
     printf("请输入你的年龄：");
     scanf("%d", &age);
 
     printf("你的年龄是%d岁。\n", age);
 
-    if (age < MINOR){
+    if (age < MINOR) {
         printf("年轻是美好的，");
     }
 

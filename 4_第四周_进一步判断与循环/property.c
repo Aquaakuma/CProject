@@ -1,3 +1,4 @@
+/* Copyright 2024 TUT */
 #include <stdio.h>
 
 int main() {
@@ -5,25 +6,25 @@ int main() {
     int num = 0;    // 读入的数字
     int seq = 1;    // 序号
     int fea = 0;    // 特征值
-    int count = 0;    // 二进制数字
+    int count = 0;  // 二进制数字
     int i = 0;
 
 
     // 读入数字
     scanf("%d", &num);
     do {
-        if ( (num%10%2)==(seq%2)) {
+        if ((num % 10 % 2) == (seq % 2)) {
             count = 1;
-            for (i=seq; i>1; i--) {
+            for (i = seq; i > 1; i--) {
                 count *= 2;
             }
             fea += count;
         }
         num /= 10;
         seq++;
-    }while ( num>0 );
+    } while (num > 0);
 
-    printf("%d", fea);
+    printf("%d\n", fea);
 
     return 0;
 }

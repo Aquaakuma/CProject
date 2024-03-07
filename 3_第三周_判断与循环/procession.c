@@ -1,3 +1,4 @@
+/* Copyright 2024 TUT */
 #include <stdio.h>
 
 int main() {
@@ -10,7 +11,7 @@ int main() {
     do {
         printf("%d ", i);
         i += 2;
-    }while ( i<=n );
+    } while (i <= n);
 
 
     return 0;

@@ -1,3 +1,4 @@
+/* Copyright 2024 TUT */
 #include <stdio.h>
 
 int main()
@@ -11,9 +12,7 @@ int main()
     printf("请输入票面：");
     scanf("%d", &bill);
     // 计算找零
-    if (bill >= price){
-    printf("应该找你：%d\n", bill - price);        
-    }
+    printf("应该找你：%d\n", bill - price);
 
     return 0;
 }

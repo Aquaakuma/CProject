@@ -1,7 +1,7 @@
+/* Copyright 2024 TUT */
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int a, b;
 
     printf("请输入两个整数：");

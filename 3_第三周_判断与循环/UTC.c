@@ -1,3 +1,4 @@
+/* Copyright 2024 TUT */
 #include <stdio.h>
 
 int main() {
@@ -10,10 +11,10 @@ int main() {
     // 读入BJT
     scanf("%d", &bjt);
 
-    if ( bjt>0 && bjt<2359 ) {
+    if (bjt >= 0 && bjt <= 2359) {
         minute = bjt % 100;
         hour = bjt / 100 - 8;
-        if ( hour<0 ) {
+        if (hour < 0) {
             hour = hour + 24;
         }
     }
